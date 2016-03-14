@@ -3,10 +3,7 @@ $fondo: 5%;
 $ancho: 4.5%;
 $alto: 7%;
 $variacion: 10;
-$variacion2: 50;
-
-
-
+$variacion2: 80;
 
 .boton-lista{
 		padding-top: 15px;
@@ -28,11 +25,11 @@ $variacion2: 50;
 	padding-top: 15px;
 	position: fixed;
 	right: $derecha +$variacion;
-	bottom: $fondo + $variacion;
-	width: $ancho+$variacion2;
+	bottom: $fondo;
+	width: $ancho+($variacion2 - 10);
 	height:$alto+$variacion2;
-	//border-radius: 50%;
-	background-color: black;
+	border-radius: 20px;
+	background-color: lighten(green, 50%);
 	z-index: 10;
 	text-align: center;
 	font-size: 150%;
@@ -45,26 +42,18 @@ $variacion2: 50;
 	50% {right: $derecha+50; bottom: $fondo+50 ; width: 4.5%; height: 7%;
 							border-radius: 50%;}
 
-	100% {right: $derecha + $variacion; bottom: $fondo + $variacion ; width: $ancho+$variacion2; height: $alto+$variacion2;
-													border-radius: 0%;}
-
-
+	100% {right: $derecha + $variacion; bottom: $fondo;
+			width: $ancho+($variacion2 - 10); height: $alto+$variacion2; border-radius: 20px;
+			 background-color: lighten(green, 50%);}
 }
 
 #icono:hover{
-		-moz-transition: all 1s ease-in-out;
-		-webkit-transition: all 1s ease-in-out;
-		-o-transition: all 1s ease-in-out;
-		-ms-transition: all 1s ease-in-out;
 		transition: all 1s ease-in-out;
-		-moz-transform: rotate(-720deg);
-		-webkit-transform: rotate(-720deg);
-		-o-transform: rotate(-720deg);
-		-ms-transform: rotate(-720deg);
 		transform: rotate(-720deg);
 }
 
-.todo-list{
+#todo-list{
+	display: none;
 	background-color: green;
 	width: 20%;
 	position: fixed;

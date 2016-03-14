@@ -18,10 +18,11 @@
   padding-top: 15px;
   position: fixed;
   right: 13%;
-  bottom: 15%;
-  width: 54.5%;
-  height: 57%;
-  background-color: black;
+  bottom: 5%;
+  width: 74.5%;
+  height: 87%;
+  border-radius: 20px;
+  background-color: #80ff80;
   z-index: 10;
   text-align: center;
   font-size: 150%;
@@ -44,27 +45,21 @@
   }
   100% {
     right: 13%;
-    bottom: 15%;
-    width: 54.5%;
-    height: 57%;
-    border-radius: 0%;
+    bottom: 5%;
+    width: 74.5%;
+    height: 87%;
+    border-radius: 20px;
+    background-color: #80ff80;
   }
 }
 
 #icono:hover {
-  -moz-transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  -moz-transform: rotate(-720deg);
-  -webkit-transform: rotate(-720deg);
-  -o-transform: rotate(-720deg);
-  -ms-transform: rotate(-720deg);
   transform: rotate(-720deg);
 }
 
-.todo-list {
+#todo-list {
+  display: none;
   background-color: green;
   width: 20%;
   position: fixed;

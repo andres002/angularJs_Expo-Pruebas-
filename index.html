@@ -11,40 +11,43 @@
 	<title>Boton lista</title>
 </head>
 <body>
-<div class="boton-lista" id = "div-Boton" onclick='hola()'> <i class="fa fa-list-ul" style="color: white; padding-top: 7%;" id="icono"></i></div>
+<div class="boton-lista" id = "div-Boton" onclick='hola()'>
+	<i class="fa fa-list-ul" style="color: white; padding-top: 7%;" id="icono"></i>
+	<div ng-app="myApp" ng-controller="todoCtrl" id=todo-list">
 
-<div ng-app="myApp" ng-controller="todoCtrl" class="todo-list">
+	<div ng-repeat="x in todoList">
+	    <input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span>
+	</div>
 
-<div ng-repeat="x in todoList">
-    <input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span>
+	<p><button ng-click="remove()">Remove marked</button></p>
+	<form ng-submit="todoAdd()">
+	    <input type="text" ng-model="todoInput" placeholder="Añadir Tarea">
+	    <input type="submit" value="Añadir">
+	</form>
+	<script>
+	var app = angular.module('myApp', []);
+	app.controller('todoCtrl', function($scope) {
+	    $scope.todoList = [{todoText:'Clean House', done:false}];
+
+	    $scope.todoAdd = function() {
+	        $scope.todoList.push({todoText:$scope.todoInput, done:false});
+	        $scope.todoInput = "";
+	    };
+
+	    $scope.remove = function() {
+	        var oldList = $scope.todoList;
+	        $scope.todoList = [];
+	        angular.forEach(oldList, function(x) {
+	            if (!x.done) $scope.todoList.push(x);
+	        });
+	    };
+	});
+	</script>
+
+	</div>
+
 </div>
 
-<p><button ng-click="remove()">Remove marked</button></p>
-<form ng-submit="todoAdd()">
-    <input type="text" ng-model="todoInput" placeholder="Añadir Tarea">
-    <input type="submit" value="Añadir">
-</form>
-<script>
-var app = angular.module('myApp', []); 
-app.controller('todoCtrl', function($scope) {
-    $scope.todoList = [{todoText:'Clean House', done:false}];
-
-    $scope.todoAdd = function() {
-        $scope.todoList.push({todoText:$scope.todoInput, done:false});
-        $scope.todoInput = "";
-    };
-
-    $scope.remove = function() {
-        var oldList = $scope.todoList;
-        $scope.todoList = [];
-        angular.forEach(oldList, function(x) {
-            if (!x.done) $scope.todoList.push(x);
-        });
-    };
-});
-</script>
-
-</div>
 
 
 
