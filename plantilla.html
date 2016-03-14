@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Exposicion</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="app.css">
+    <!--meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1")-->
+    <script type="text/javascript" src="js/jquery-2.2.1.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+  </head>
+  <body>
+    <div class="uno">
+      <div class="dentro centro">
+        <p class="titulo">API( Application Programming Interface.) Interfaz de programación de aplicaciones.</p>
+        <div class="texto">Se definen como un conjunto de funciones globales para realizar tareas comunes tales como:
+          <div class="relativo">
+            <ul class="relativo izquierda5">
+              <li class="mio">comparar objetos</li>
+              <li class="mio">iterar objetos</li>
+              <li class="mio">convertir datos</li>
+            </ul>
+          </div>
+          <p class="relativo top5 margen-derecha5">Nosotros podemos tener acceso a estas funciones mediante el objeto "Angular" y algunas de las mas conocidas son:</p>
+          <div class="container"></div>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>API</th>
+                <th>Descripcion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>angular.lowercase()</td>
+                <td>convierte una String a minuscula</td>
+              </tr>
+              <tr>
+                <td>angular.uppercase()</td>
+                <td>convierte una String a Mayuscula</td>
+              </tr>
+              <tr>
+                <td>angular.isString()</td>
+                <td>retorna true si la referencia es una String</td>
+              </tr>
+              <tr>
+                <td> angular.isNumber()</td>
+                <td> retorna true si la referencia es un numero</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="dos">
+      <div class="dentro centro">
+        <p class="titulo">AngularJS ng-include Directive</p>
+        <div class="texto">Con AngularJS tú puedes incluir contenido HTM usando la directiva ng-include y los archivos que tú incluyas con dicha directiva tambien pueden contener AngularJs
+          <p>ejemplos:</p>
+        </div>
+      </div>
+    </div>
+    <div class="tres">
+      <div class="dentro centro">
+        <p class="titulo">Angular animation</p>
+        <div class="texto">AngularJS nos ofrece trancisiones animadas con ayuda de CSS<br>
+          <p class="titulo2"> ¿Qué es una animación?</p>
+          <p>Es cuando una transformación de HTML nos dá la ilusión de movimiento</p><br>
+          <p class="titulo2">¿Qué necesitas?</p>
+          <p> Necesitas incluir la libreria Animate de AngularJs </p><span class="color-red">&#60script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"&#62&#60/script&#62</span>
+          <p>luego necesitas referenciar  al modulo a animar en tu aplicacion</p><span class="color-red">&#60body ng-app="ngAnimate"&#62</span>
+          <p>Pero si ya tienes el nombre de una aplicación añade ngAnimate como una dependencia en tu modulo de la aplicacion</p><span class="color-red">var app = angular.module('myApp', ['ngAnimate']);</span>
+        </div>
+      </div>
+    </div>
+    <div class="cuatro">
+      <div class="dentro centro">
+        <p style="color: green;" class="titulo">¿Y esto como se hace?</p>
+        <div class="texto">ejemplos:<a href="ejemplosAnimaciones.html" target="_blank">Vamos a ver las animaciones</a><br><br>
+          <p class="titulo2">Entonces... ¿Qué hace ng-Animate?</p><span>ng-Animate no anima los elementos de tu Html</span><br><span>ng-Animate espera Eventos y añade clases de CSS  </span><br><br>
+          <p class="titulo2">¿Qué mas podemos hacer?</p>
+          <p>Existen varias directivas que podemos usar para las animaciones</p>
+          <p>como: ng-show, ng-hide, ng-class, ng-view, ng-include, ng-repeat, ng-if, ng-switch</p><br><br>
+          <p class="titulo2">Veamos una mas...</p>
+        </div>
+      </div>
+    </div>
+    <div class="cinco">
+      <div class="dentro centro">
+        <p class="titulo">ng-class
+          <div class="texto">La forma mas simple de usar ngClass es añadiendo una variable a ng-class
+            <p>  y esa sera la clase que sera usada para el elemento</p>
+          </div>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

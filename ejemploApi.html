@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Exposicion</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="app.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    </head>
+
+    <body >
+      <div class="uno">
+        <div class="dentro centro" ng-app="myApp" ng-controller="myCtrl">
+          <p class = "titulo" >{{ x1 }}</p>
+          <p class = "titulo" >{{ x2 }}</p>
+          <p class = "titulo" >{{ x3 }}</p>
+          <p class = "titulo" >{{ x4 }}</p>
+          <p class = "titulo" >{{ x5 }}</p>
+          <p class = "titulo" >{{ x6 }}</p>
+        </div>
+        <script>
+          var app = angular.module('myApp', []);
+          app.controller('myCtrl', function($scope) {
+              $scope.x1 = "JOHN";
+              $scope.x7 = 56;
+              $scope.x2 = angular.lowercase($scope.x1);
+              $scope.x3 = angular.uppercase($scope.x2);
+              $scope.x4 = angular.isString($scope.x1);
+              $scope.x5 = angular.isNumber($scope.x1);
+              $scope.x6 = angular.isNumber($scope.x7);
+          });
+        </script>
+
+
+    </body>
+  </html>

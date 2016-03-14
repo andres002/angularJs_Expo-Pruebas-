@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.uno {
+  background-image: url(fondo1.png);
+}
+
+.dos {
+  background-image: url(fondo2.png);
+}
+
+.tres {
+  background-image: url(fondo3.png);
+}
+
+.cuatro {
+  background-image: url(fondo4.png);
+}
+
+.cinco {
+  background-image: url(fondo5.png);
+}
+
+.uno, .dos, .tres, .cuatro, .cinco {
+  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: normal !important;
+}
+
+.dentro {
+  top: 15%;
+  left: 15vw;
+  position: absolute;
+  width: 55vw;
+  height: 55%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10%;
+  padding: 3%;
+}
+
+li.mio {
+  line-height: normal !important;
+}
+
+.titulo {
+  position: relative;
+  font-size: 2.5em;
+  font-weight: bolder;
+  color: DodgerBlue;
+}
+
+.titulo2 {
+  position: relative;
+  font-size: 1em;
+  font-weight: bolder;
+  color: green;
+}
+
+.texto {
+  left: 5%;
+  right: 5%;
+  top: 10%;
+  position: relative;
+  text-align: justify;
+  font-size: 2em;
+}
+
+.color-red {
+  color: red;
+}
+
+.container {
+  position: relative;
+}
+
+.derecha5 {
+  right: 5%;
+}
+
+.margen-derecha5 {
+  margin-right: 5%;
+}
+
+.margen-izquierda5 {
+  margin-left: 5%;
+}
+
+.izquierda5 {
+  left: 5%;
+}
+
+.absoluto {
+  position: absolute;
+}
+
+.top5 {
+  top: 5%;
+}
+
+.top10 {
+  top: 10%;
+}
+
+.relativo {
+  position: relative;
+}
+
+.estatico {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.centro {
+  text-align: center;
+}

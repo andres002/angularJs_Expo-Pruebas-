@@ -1,0 +1,99 @@
+doctype
+html(lang="es")
+  head
+    title Exposicion
+    meta(charset="utf-8")
+    link(rel="stylesheet", href="app.css")
+    //meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1")
+    script(type="text/javascript" src="js/jquery-2.2.1.js")
+    script(type="text/javascript" src="funciones.js")
+    link(rel="stylesheet", href="css/bootstrap.min.css")
+    link(rel="stylesheet", href="css/bootstrap-responsive.css")
+    
+  body
+    
+    .uno
+      .dentro.centro 
+        p.titulo API( Application Programming Interface.) Interfaz de programación de aplicaciones.
+        .texto Se definen como un conjunto de funciones globales para realizar tareas comunes tales como:
+          .relativo
+            ul.relativo.izquierda5
+              li.mio comparar objetos
+              li.mio iterar objetos
+              li.mio convertir datos
+          p.relativo.top5.margen-derecha5 Nosotros podemos tener acceso a estas funciones mediante el objeto "Angular" y algunas de las mas conocidas son:
+          .container
+          table.table.table-striped
+            thead
+              tr
+                th API
+                th Descripcion
+            tbody
+              tr
+                td angular.lowercase()
+                td convierte una String a minuscula
+              tr
+                td angular.uppercase()
+                td convierte una String a Mayuscula
+              tr
+                td angular.isString()
+                td retorna true si la referencia es una String
+              tr
+                td  angular.isNumber()
+                td  retorna true si la referencia es un numero
+          
+          a(href="ejemploApi.html")
+    
+    
+    .dos
+      .dentro.centro
+        p.titulo AngularJS ng-include Directive
+        .texto Con AngularJS tú puedes incluir contenido HTM usando la directiva ng-include y los archivos que tú incluyas con dicha directiva tambien pueden contener AngularJs
+          p ejemplos:
+    .tres
+      .dentro.centro
+        p.titulo Angular animation
+        .texto AngularJS nos ofrece trancisiones animadas con ayuda de CSS
+          br
+          p.titulo2  ¿Qué es una animación?
+          p Es cuando una transformación de HTML nos dá la ilusión de movimiento
+          br
+          p.titulo2 ¿Qué necesitas?
+          p  Necesitas incluir la libreria Animate de AngularJs 
+          span.color-red &#60script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"&#62&#60/script&#62
+          p luego necesitas referenciar  al modulo a animar en tu aplicacion
+          span.color-red &#60body ng-app="ngAnimate"&#62
+          p Pero si ya tienes el nombre de una aplicación añade ngAnimate como una dependencia en tu modulo de la aplicacion
+          span.color-red var app = angular.module('myApp', ['ngAnimate']);
+      
+    .cuatro
+      .dentro.centro
+        p.titulo(style="color: green;") ¿Y esto como se hace?
+        .texto ejemplos:
+          a(href="ejemplosAnimaciones.html" target="_blank") Vamos a ver las animaciones
+          br
+          br
+          p.titulo2 Entonces... ¿Qué hace ng-Animate?
+          span ng-Animate no anima los elementos de tu Html
+          br
+          span ng-Animate espera Eventos y añade clases de CSS  
+          br
+          br
+          p.titulo2 ¿Qué mas podemos hacer?
+          p Existen varias directivas que podemos usar para las animaciones
+          p como: ng-show, ng-hide, ng-class, ng-view, ng-include, ng-repeat, ng-if, ng-switch
+          br
+          br
+          p.titulo2 Veamos una mas...
+    .cinco
+      .dentro.centro
+        p.titulo ng-class
+          .texto La forma mas simple de usar ngClass es añadiendo una variable a ng-class 
+            p   y esa sera la clase que sera usada para el elemento
+            
+          
+        
+
+
+        
+    
